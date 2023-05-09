@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 export default {
     methods: {
         async $api(url, method, data) {
@@ -9,7 +10,8 @@ export default {
                 data
             }).catch(e => {
                 console.log(e);
-            })).data;
+            }));
         }
     }
 }
+
